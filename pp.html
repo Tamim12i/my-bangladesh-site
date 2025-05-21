@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangladesh</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');body {
+  font-family: 'Baloo 2', cursive;
+  margin: 0;
+  background: linear-gradient(to bottom, #e6ffe6, #ccffcc);
+  color: #333;
+}
+
+nav {
+  background-color: #006a4e;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.search-bar {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/0/05/Sundarbans_Bangladesh.jpg') center/cover;
+  color: white;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 106, 78, 0.6);
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.media-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+}
+
+.media-card img,
+.media-card video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.media-card a {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  background-color: #00994d;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.faces-section {
+  padding: 40px 20px;
+  background-color: #f0fff0;
+  text-align: center;
+}
+
+.faces-section h2 {
+  font-size: 2.5em;
+  color: #004d26;
+  margin-bottom: 30px;
+}
+
+.face-card {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  background: #fff;
+  border: 2px solid #00994d;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.face-card h3 {
+  color: #006a4e;
+  margin-bottom: 10px;
+}
+
+  </style>
+</head>
+<body><nav>
+  <ul class="navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Videos</a></li>
+    <li><a href="#">Games</a></li>
+    <li><a href="#">Apps</a></li>
+    <li><a href="#">Faces</a></li>
+  </ul>
+  <input type="text" class="search-bar" placeholder="Search...">
+</nav><header>
+  <h1>Welcome to Bangladesh!</h1>
+  <p>Explore the beauty, wildlife, and fun of our country!</p>
+</header><section class="media-grid">
+  <div class="media-card">
+    <img src="Mountains of Bangladesh.webp" alt="Mountains of Bangladesh">
+    <a href="#">Explore Mountains</a>
+  </div>
+  <div class="media-card">
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <a href="#">Watch a Nature Video</a>
+  </div>
+  <div class="media-card">
+    <img src="Royal Bengal Tiger.webp" alt="Royal Bengal Tiger">
+    <a href="#">Meet the Royal Bengal Tiger</a>
+  </div>
+  <div class="media-card">
+    <video controls>
+      <source src="463057_lions_game_reserve_lioness_19030112511720p5000br.mp4" type="video/mp4">
+    </video>
+    <a href="#">Watch Sundarbans Sky</a>
+  </div>
+  <div class="media-card">
+    <video controls>
+      <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/City_traffic_day_02_Videvo.mov93247.mp4" type="video/mp4">
+    </video>
+    <a href="#">Explore a Bangladeshi City</a>
+  </div>
+</section><section class="faces-section">
+  <h2>Meet the 5 Faces</h2>
+  <div class="face-card">
+    <h3>Adventure Arif</h3>
+    <p>Loves animals & nature</p>
+  </div>
+  <div class="face-card">
+    <h3>Techie Tuli</h3>
+    <p>Enjoys apps and tech fun</p>
+  </div>
+  <div class="face-card">
+    <h3>Gamey Gazi</h3>
+    <p>Plays fun games daily</p>
+  </div>
+  <div class="face-card">
+    <h3>Wise Wara</h3>
+    <p>Learns from videos</p>
+  </div>
+  <div class="face-card">
+    <h3>Builder Babu</h3>
+    <p>Creates and explores</p>
+  </div>
+  <div>
+    <input type="text" class="search-bar" placeholder="Search...">
+<button id="search-btn">Search</button>
+    <div>
+    <script src="script.js"></script>
+    </div>
+  </div>
+</section></body>
+</html>
